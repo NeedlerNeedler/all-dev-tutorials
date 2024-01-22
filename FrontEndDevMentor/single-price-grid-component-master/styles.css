@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+  width: 50%;
+  height: auto;
+
+  display: grid;
+  grid-template-areas:
+    "top top"
+    "left right";
+}
+
+.top {
+  grid-area: top;
+  background-color: white;
+}
+
+.top-text {
+  border: 10px 20px 20px 20px;
+}
+
+.left {
+  grid-area: left;
+  background-color: hsl(179, 62%, 43%);
+}
+
+.right {
+  grid-area: right;
+  background-color: hsl(179, 62%, 51%);
+}

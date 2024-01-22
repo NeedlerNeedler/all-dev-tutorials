@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href=""/>
+  </head>
+  <body>
+    <h1 id="title">FreecodeCamp survey form</h1>
+    <p id="description">
+      Thank you for taking the time to help improve the platform
+    </p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <br />
+      <input type="text" id="name" placeholder="Enter your Name" required />
+      <br />
+      <label for="email" id="email-label">Email</label>
+      <br />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your Email"
+        required
+      />
+      <br />
+
+      <label for="number" id="number-label">Age (optional)</label>
+      <br />
+      <input type="number" id="number" placeholder="Age" name="Age" min="10" max="100"/>
+<br>
+
+<label for="radio">Radio buttons</label> <br>
+  <input type="radio" id="option1" name="radio-group" value="option1">
+  <label for="option1">Option 1</label><br>
+  <input type="radio" id="option2" name="radio-group" value="option2">
+  <label for="option2">Option 2</label>
+
+<br>
+
+<label for="dropdown">Which option best describes your current role?</label>
+<select id="dropdown">
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+
+<br>
+
+  <legend>Check all that apply:</legend>
+  <input type="checkbox" id="check1" name="check1" value="check1">
+  <label for="check1">Option 1</label><br>
+  <input type="checkbox" id="check2" name="check2" value="check2">
+  <label for="check2">Option 2</label>
+
+<textarea name="Additional-comments" id="" cols="30" rows="10"></textarea>
+<br>
+<button id="submit" type="submit">submit</button>
+    </form>
+  </body>
+</html>

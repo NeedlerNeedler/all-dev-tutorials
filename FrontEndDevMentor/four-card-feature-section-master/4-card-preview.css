@@ -1,0 +1,84 @@
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.top {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 300px;
+  color: grey;
+  padding: 10px;
+}
+
+.top h1,
+.top h2,
+.top p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+h2 {
+  color: black;
+}
+
+.blocks {
+  display: grid;
+  grid-template-areas:
+    ". team-builder ."
+    "supervisor team-builder calculator"
+    "supervisor karma calculator"
+    ". karma .";
+}
+
+.team-builder,
+.karma,
+.supervisor,
+.calculator {
+  border: solid white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: 15px;
+  width: 250px;
+}
+
+.team-builder {
+  grid-area: team-builder;
+  border-top: solid red 4px;
+}
+
+.karma {
+  grid-area: karma;
+  border-top: solid hsl(34, 97%, 64%) 4px;
+}
+
+.supervisor {
+  grid-area: supervisor;
+  border-top: solid hsl(180, 62%, 55%) 4px;
+}
+
+.calculator {
+  grid-area: calculator;
+  border-top: solid hsl(212, 86%, 64%) 4px;
+}
+
+.blocks p {
+  color: grey;
+}

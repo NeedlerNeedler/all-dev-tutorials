@@ -1,0 +1,90 @@
+.layout-container {
+  display: grid;
+  grid-template-rows: 50px 120px 250px 50px;
+  grid-template-columns: repeat(3, 150px) 150px;
+  margin: auto;
+  width: auto;
+  font-size: 20px;
+  padding: 5px;
+  row-gap: 20px;
+  column-gap: 15px;
+  color: white;
+  grid-template-areas:
+    "header header header header"
+    "box1 box2 box3 sidebar"
+    "main main main sidebar"
+    "footer footer footer footer";
+}
+
+.Header {
+  background-color: orangered;
+  grid-area: header;
+}
+.small-box-1 {
+  background-color: orangered;
+  grid-area: box1;
+}
+.small-box-2 {
+  background-color: orangered;
+  grid-area: box2;
+}
+.small-box-3 {
+  background-color: orangered;
+  grid-area: box3;
+}
+.main-content {
+  background-color: orangered;
+  grid-area: main;
+}
+.sidebar {
+  background-color: orangered;
+  grid-area: sidebar;
+}
+.footer {
+  background-color: orangered;
+  grid-area: footer;
+}
+
+/* .layout-container {
+  display: grid;
+  grid-template-rows:
+    [header-start] 50px [header-end box-start] 120px [box-end main-start]
+    250px [main-end footer-start] 50px [footer-end];
+  grid-template-columns: repeat(3, [column-start] 150px [column-end]) 150px [grid-end];
+  margin: auto;
+  width: auto;
+  font-size: 20px;
+  padding: 5px;
+  row-gap: 20px;
+  column-gap: 15px;
+  color: white;
+}
+
+.Header {
+  background-color: orangered;
+  grid-column: column-start 1 / grid-end;
+}
+.small-box-1 {
+  background-color: orangered;
+}
+.small-box-2 {
+  background-color: orangered;
+}
+.small-box-3 {
+  background-color: orangered;
+}
+.main-content {
+  background-color: orangered;
+  grid-row: main-start;
+  grid-column: column-start 1 / column-end 3;
+}
+.sidebar {
+  background-color: orangered;
+  grid-row: header-end / footer-start;
+  grid-column: column-end 3 / grid-end;
+}
+.footer {
+  background-color: orangered;
+  grid-row: footer-start / footer-end;
+  grid-column: column-start 1 / grid-end;
+} */

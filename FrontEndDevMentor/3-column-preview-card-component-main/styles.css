@@ -1,0 +1,107 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h2 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
+
+img {
+  width: 40px;
+  height: auto;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 00px 0px 10px 10px;
+}
+
+.sedans-copy,
+.luxury-copy,
+.suvs-copy {
+  margin: 30px 30px 30px 30px;
+}
+
+button {
+  border-radius: 20px;
+  padding: 10px 15px 10px 15px;
+  border: none;
+}
+.sedans button {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs button {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row; /* cards side by side */
+    width: 80%; /* or a fixed width like 960px */
+    max-width: 1200px; /* maximum width of the container */
+  }
+
+  .sedans,
+  .suvs,
+  .luxury {
+    padding: 0px;
+    border-radius: 0;
+  }
+
+  .sedans {
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .luxury {
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  button {
+    padding: 15px 20px;
+  }
+
+  img {
+    width: 60px; /* larger images for desktop */
+  }
+}

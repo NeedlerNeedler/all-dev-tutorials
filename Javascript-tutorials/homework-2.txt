@@ -1,0 +1,28 @@
+Question 1 (Continuing last week Q3)
+
+There are two teams, team1 and team2. They compete against each other 3 times. The winner with the highest average score wins a trophy!
+
+Example:
+team1: 95, 120, 111,
+team2: 89, 98, 100
+
+1. Calculate the average score for each team, using the test data above.
+2. Compare the team's average scores to determine the winner of the competition, and print the winner to the console. The result of the match could also be a draw.
+3. Include a requirement for a minimum score of 100. A team could only wins if it has a higher score than the other team, and score at least 100 points.
+4. This requirement also applies to a draw. So a draw only happens when both teams have the same score and both have a score greater or equal 100 points. Otherwise, no team wins the trophy.
+
+Question 2
+
+Use a switch statement to log the following string for the given 'day':
+  monday: 'Not againnn :('
+  tuesday or wednesday: 'Let's do this'
+  thursday: 'Almost there'
+  friday: 'Finallyyyy'
+  saturday: 'Yayyy'
+  sunday: 'It's Sunday already?'
+  for all other day 'Invalid Input'
+
+Question 3
+
+Write a function called fooBar that takes a input integer n and print "foo" if n is divisible by 3,
+print "bar" if n is divisible by 5 and print "fooBar" if n is divisible by 3 and 5. Otherwise just print the number.

@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+p {
+  font-size: 26px;
+  background-color: black;
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+}
+
+button {
+  border-radius: 10%;
+  font-size: 18px;
+  padding: 10px 15px 10px 15px;
+}

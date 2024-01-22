@@ -1,0 +1,144 @@
+p {
+  color: black;
+  font-size: 16px;
+}
+.nav-item {
+  color: #6b7280;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-right: 30px;
+}
+.nav-item:hover {
+  color: black;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border-bottom: 1px solid black;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+main article {
+  width: 200px;
+}
+
+body {
+  background-color: #dee2ff;
+  min-height: 100vh; /*100% is minimum height */
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 250px;
+  height: 150px;
+}
+
+article {
+  background-color: white;
+}
+
+#site-logo {
+  font-family: "Pacifico", cursive;
+  font-size: 32px;
+  box-sizing: border-box;
+}
+
+a {
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.petpage {
+  background-color: white;
+  border: 1px solid #6b7280;
+  border-radius: 32px;
+  width: 900px;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.pet-details {
+  display: flex;
+  align-items: center;
+}
+
+.other-images > img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+.main-image {
+  align-items: center;
+  margin: 0 30px 0 0;
+}
+
+footer {
+  align-items: right;
+}
+
+.pet-sections {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  width: auto;
+  margin: auto;
+  padding: 5px;
+  row-gap: 20px;
+  column-gap: 15px;
+  justify-content: center;
+}
+
+.pet-sections > a {
+  border: solid black 0.5px;
+  border-radius: 20px;
+  padding: 25px;
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/* .container{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    height: 150px;
+    align-items:center;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+
+.item{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-basis: 100px;
+    height: 50px;
+    flex-shrink: 0;
+    background-color: aqua;
+}
+
+.in3{
+    height: 100px;
+    font-size: 56px;
+    align-self: flex-start;
+    order: -1;
+    flex-grow: 1;
+} */

@@ -1,0 +1,45 @@
+Question 1
+
+Haley weights 65kg and is 1.66m tall. Alex weights 80kg and is 1.85m tall.
+
+1. Calculate both of their BMI using the formula (BMI = mass / height ** 2)
+2. Print a nice output to the console. The message is either "Haley's BMI (xx.x) 
+is higher than Alex's (yy.y)" or "Alex's BMI (yy.y) is higher than Haley's (xx.x)"
+
+Question 2
+
+There are two teams, team1 and team2. They compete against each other 3 times. 
+The winner with the highest average score wins a trophy!
+
+Example:
+team1: 95, 120, 111,
+team2: 89, 98, 100
+
+1. Calculate the average score for each team, using the test data above.
+2. Compare the team's average scores to determine the winner of the competition, 
+and print the winner to the console. The result of the match could also be a draw.
+
+Question 3
+
+Declare a variable 'booksReadPerYear' based on a prompt input like this: 
+prompt('How many books do you read per year?');
+
+Now, try to run this code:
+if (booksReadPerYear == 1) {
+  console.log("I read one book per year.")
+} else if (booksReadPerYear > 1) {
+  console.log("I read a lot.")
+} else {
+  console.log("I don't read.")
+}
+
+Now, try to change the previous code to this:
+if (booksReadPerYear === 1) {
+  console.log("I read one book per year.")
+} else if (booksReadPerYear > 1) {
+  console.log("I read a lot.")
+} else {
+  console.log("I don't read.")
+}
+
+What do you notice when the book you read is exactly one per year?
