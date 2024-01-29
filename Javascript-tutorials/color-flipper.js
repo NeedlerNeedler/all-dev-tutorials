@@ -20,8 +20,3 @@ document.getElementById("button").addEventListener("click", function(){
     body.style.backgroundColor = newColor;
     hex.textContent = newColor;
 })
-
-
-hello! 
-
-pdocument 

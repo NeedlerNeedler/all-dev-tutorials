@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number!</title>
+    <link rel="stylesheet" href="number-game.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div id="game">
+        <h1>I am thinking of a number between 1-100.</h1>
+        <p>Can you guess it?</p>
+
+        <div class="input-container">
+          <input type="number" placeholder="00" id="guess" />
+          <button id="guessSubmit">Guess</button>
+        </div>
+
+        <div class="game-stats-container">
+          <p class="game-stats">
+            <strong>Number of guesses:</strong> <span id="noOfGuesses">0</span>
+          </p>
+          <p class="game-stats">
+            <strong>Guessed numbers are:</strong>
+            <span id="guessedNums">-</span>
+          </p>
+          <p class="game-stats">
+            <strong>High Score:</strong> <span id="highScore">-</span>
+          </p>
+        </div>
+      </div>
+      <button id="restart">Restart</button>
+      <div class="result">
+        <div id="hint"></div>
+      </div>
+    </main>
+    <!-- Script -->
+    <script src="number-game.jss.js"></script>
+  </body>
+</html>

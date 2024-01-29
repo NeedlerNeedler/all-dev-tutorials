@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  background-color: hsl(30, 54%, 90%);
+}
+
+.container {
+  background-color: white;
+  width: 600px;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+img {
+  width: 600px;
+  border-radius: 10px;
+}
+
+.prep {
+  background-color: hsl(330, 100%, 98%);
+  padding: 10px;
+}
+
+.prep,
+h2 {
+  color: ;
+}
