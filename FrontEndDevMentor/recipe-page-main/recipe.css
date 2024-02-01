@@ -1,9 +1,9 @@
-body {
+/* body {
   display: flex;
   font-family: sans-serif;
   justify-content: center;
   align-items: center;
-  max-height: 100vh;
+  height: 100vh;
   background-color: hsl(30, 54%, 90%);
 }
 
@@ -12,6 +12,22 @@ body {
   width: 600px;
   padding: 25px;
   border-radius: 10px;
+} */
+
+body {
+  font-family: "Outfit", sans-serif; /* Primary font */
+  background-color: hsl(30, 54%, 90%);
+  margin: 0; /* Removes default margin */
+  padding: 100px; /* Removes default padding */
+}
+
+.container {
+  background-color: white;
+  width: 100%;
+  max-width: 600px; /* Maximum width for larger screens */
+  padding: 25px;
+  border-radius: 10px;
+  margin: 0 auto; /* Centers the container */
 }
 
 img {
@@ -26,5 +42,42 @@ img {
 
 .prep,
 h2 {
-  color: ;
+  color: hsl(332, 51%, 32%);
+}
+
+li {
+  color: hsl(0, 0%, 31%);
+  margin-bottom: 10px;
+}
+
+strong {
+  color: black;
+}
+
+.instructions:after,
+.ingredients:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #d4d4d4;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%; /* Sets table width to fit the container */
+  border-collapse: collapse; /* Optional: for a cleaner look */
+}
+
+td {
+  border: 1px solid #ddd; /* Optional: adds a border to each cell */
+  padding: 8px; /* Adjusts the padding inside each cell */
+}
+
+td:nth-child(2) {
+  /* Targets the second column */
+  background-color: #f0f0f0; /* Sets a background color */
+  font-weight: bold; /* Makes the font bold */
+  text-align: right; /* Aligns text to the right */
+  color: hsl(14, 45%, 36%);
 }
