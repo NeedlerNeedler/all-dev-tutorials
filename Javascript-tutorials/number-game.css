@@ -126,6 +126,10 @@ p {
   color: #24663b;
 }
 
+#game {
+  opacity: 100;
+}
+
 @keyframes pop {
   0% {
     transform: scale(0);
