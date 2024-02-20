@@ -19,7 +19,7 @@
   <body>
     <div class="container">
       <div class="logo">
-        <img src="images/favicon-32x32.png" alt="copy logo" />
+        <img src="images/logo.svg" alt="logo" />
       </div>
       <div class="header">
         <h1>A history of everything you copy</h1>
@@ -28,8 +28,8 @@
           Instantly access your clipboard on all your devices.
         </p>
         <div class="buttons">
-          <button>Download for iOS</button>
-          <button>Download for Mac</button>
+          <button id="green">Download for iOS</button>
+          <button id="purple">Download for Mac</button>
         </div>
         <div class="header-desc">
           <h2>Keep track of your snippets</h2>
@@ -45,18 +45,24 @@
           <img src="images/image-computer.png" alt="computer" />
         </div>
         <div class="second-desc">
-          <h3>Quick Search</h3>
-          <p>
-            Easily search your snippets by content, category, web address,
-            application, and more.
-          </p>
-          <h3>iCloud Sync</h3>
-          <p>Instantly saves and syncs snippets across all your devices.</p>
-          <h3>Complete History</h3>
-          <p>
-            Retrieve any snippets from the first moment you started using the
-            app.
-          </p>
+          <div class="quick-search second-text">
+            <h3>Quick Search</h3>
+            <p>
+              Easily search your snippets by content, category, web address,
+              application, and more.
+            </p>
+          </div>
+          <div class="icloud second-text">
+            <h3>iCloud Sync</h3>
+            <p>Instantly saves and syncs snippets across all your devices.</p>
+          </div>
+          <div class="complete-history second-text">
+            <h3>Complete History</h3>
+            <p>
+              Retrieve any snippets from the first moment you started using the
+              app.
+            </p>
+          </div>
         </div>
       </div>
       <div class="third">
@@ -68,7 +74,7 @@
           </p>
         </div>
         <div class="third-image">
-          <img src="images/image-devices.png" alt="devices" />
+          <img src="images/image-devices.png" alt="devices" id="third-image" />
         </div>
         <div class="third-desc-two">
           <h3>Supercharge your workflow</h3>
@@ -107,33 +113,35 @@
         <img src="images/logo-vector-graphics.png" alt="" class="brand" />
       </div>
       <div class="sixth">
-        <h3>Clipboard for iOS and Mac OS</h3>
-        <p>
-          Available for free on the App Store. Download for Mac or iOS, sync
-          with iCloud and you’re ready to start adding to your clipboard.
-        </p>
+        <div class="sixth-desc">
+          <h3>Clipboard for iOS and Mac OS</h3>
+          <p>
+            Available for free on the App Store. Download for Mac or iOS, sync
+            with iCloud and you’re ready to start adding to your clipboard.
+          </p>
+        </div>
         <div class="buttons">
-          <button>Download for iOS</button>
-          <button>Download for Mac</button>
+          <button id="green">Download for iOS</button>
+          <button id="purple">Download for Mac</button>
         </div>
       </div>
-      <footer>
-        <div class="logo">
-          <img src="images/logo.svg" alt="" />
-        </div>
-        <div class="footer-text">
-          <span>FAQs</span>
-          <span>Contact Us</span>
-          <span>Privacy Policy</span>
-          <span>Press Kit</span>
-          <span>Install Guide</span>
-        </div>
-        <div class="socials">
-          <img src="images/icon-facebook.svg" alt="" />
-          <img src="images/icon-twitter.svg" alt="" />
-          <img src="images/icon-instagram.svg" alt="" />
-        </div>
-      </footer>
     </div>
+    <footer>
+      <div class="footer-logo">
+        <img src="images/logo.svg" alt="" />
+      </div>
+      <div class="footer-text">
+        <a href="">FAQ</a>
+        <a href="">Contact Us</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Press Kit</a>
+        <a href="">Install Guide</a>
+      </div>
+      <div class="socials">
+        <img src="images/icon-facebook.svg" alt="" />
+        <img src="images/icon-twitter.svg" alt="" />
+        <img src="images/icon-instagram.svg" alt="" />
+      </div>
+    </footer>
   </body>
 </html>
