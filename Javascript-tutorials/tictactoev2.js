@@ -1,8 +1,3 @@
-// need event listener to all of the cells
-// need a forloop for the cells to select them
-// after each turn circle or x is added to the class of the board div
-// The game starts with player x - then need to alternate the turns when that player goes
-
 const WINNING_COMBOS = [
   [0, 1, 2],
   [3, 4, 5],
@@ -24,48 +19,23 @@ const cells = document.querySelectorAll(".cell");
 let xTurn = true; //state of the application - saying whether it x turn or circle turn
 let noOfTurns = 0; //stores the number of turns for a draw state
 
-// for (const individualCell of cells) {
-//     individualCell.addEventListener("click", clickDone)
-// }
-
-// cells.forEach(function (indyCell) {
-//   indyCell.addEventListener("click", clickDone, { once: true });
-// });
-
 function clickDone(e) {
   const cell = e.target;
   noOfTurns = noOfTurns + 1;
+  const activePlayerClass = xTurn ? PLAYER_ONE_CLASS : PLAYER_TWO_CLASS;
+  const inactivePlayerClass = xTurn ? PLAYER_TWO_CLASS : PLAYER_ONE_CLASS;
 
-  if (xTurn === true) {
-    cell.classList.add(PLAYER_ONE_CLASS);
-    board.classList.remove(PLAYER_ONE_CLASS);
-    board.classList.add(PLAYER_TWO_CLASS);
-    xTurn = false;
-    if (checkWin(PLAYER_ONE_CLASS) || noOfTurns === 9) {
-      winner.classList.add("show");
-      winnerMessage.textContent = checkWin(PLAYER_ONE_CLASS)
-        ? "x has won! click button below to restart"
-        : "It's a draw!";
-    }
-  } else {
-    cell.classList.add(PLAYER_TWO_CLASS);
-    xTurn = true;
-    board.classList.remove(PLAYER_TWO_CLASS);
-    board.classList.add(PLAYER_ONE_CLASS);
-    if (checkWin(PLAYER_TWO_CLASS) || noOfTurns === 9) {
-      winner.classList.add("show");
-      winnerMessage.textContent = checkWin(PLAYER_TWO_CLASS)
-        ? "circle has won! click button below to restart"
-        : "It's a draw!";
-    }
+  cell.classList.add(activePlayerClass);
+  board.classList.remove(activePlayerClass);
+  board.classList.add(inactivePlayerClass);
+  xTurn = !xTurn;
+  if (checkWin(activePlayerClass) || noOfTurns === 9) {
+    winner.classList.add("show");
+    winnerMessage.textContent = checkWin(activePlayerClass)
+      ? `${activePlayerClass} has won! click button below to restart`
+      : "It's a draw!";
   }
 }
-
-// if three in a row then trigger winning message
-// need to define the winning combinations - 8 of these - represtn the winning combos in index
-// look through winning combinations for each winning combo - check cells[i] contains either x or circle (current turn)
-// look at nested forloops and use that approach here
-// just need to check the last player that went only that player can win
 
 function checkWin(currentPlayer) {
   for (
@@ -104,3 +74,34 @@ function restartGame() {
 }
 
 restartGame();
+
+//   if (xTurn === true) {
+//     cell.classList.add(PLAYER_ONE_CLASS);
+//     board.classList.remove(PLAYER_ONE_CLASS);
+//     board.classList.add(PLAYER_TWO_CLASS);
+//     xTurn = false;
+//     if (checkWin(PLAYER_ONE_CLASS) || noOfTurns === 9) {
+//       winner.classList.add("show");
+//       winnerMessage.textContent = checkWin(PLAYER_ONE_CLASS)
+//         ? "x has won! click button below to restart"
+//         : "It's a draw!";
+//     }
+//   } else {
+//     cell.classList.add(PLAYER_TWO_CLASS);
+//     xTurn = true;
+//     board.classList.remove(PLAYER_TWO_CLASS);
+//     board.classList.add(PLAYER_ONE_CLASS);
+//     if (checkWin(PLAYER_TWO_CLASS) || noOfTurns === 9) {
+//       winner.classList.add("show");
+//       winnerMessage.textContent = checkWin(PLAYER_TWO_CLASS)
+//         ? "circle has won! click button below to restart"
+//         : "It's a draw!";
+//     }
+//   }
+// }
+
+// if three in a row then trigger winning message
+// need to define the winning combinations - 8 of these - represtn the winning combos in index
+// look through winning combinations for each winning combo - check cells[i] contains either x or circle (current turn)
+// look at nested forloops and use that approach here
+// just need to check the last player that went only that player can win
