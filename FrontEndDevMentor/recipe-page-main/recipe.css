@@ -15,19 +15,19 @@
 } */
 
 body {
-  font-family: "Outfit", sans-serif; /* Primary font */
+  font-family: "Outfit", sans-serif;
   background-color: hsl(30, 54%, 90%);
-  margin: 0; /* Removes default margin */
-  padding: 100px; /* Removes default padding */
+  margin: 0;
+  padding: 100px;
 }
 
 .container {
   background-color: white;
   width: 100%;
-  max-width: 600px; /* Maximum width for larger screens */
+  max-width: 600px;
   padding: 25px;
   border-radius: 10px;
-  margin: 0 auto; /* Centers the container */
+  margin: 0 auto;
 }
 
 img {
