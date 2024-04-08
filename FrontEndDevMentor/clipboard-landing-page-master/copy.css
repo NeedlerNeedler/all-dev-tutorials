@@ -1,0 +1,154 @@
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url(images/bg-header-desktop.png);
+  background-size: cover;
+  padding: 100px 10px 0px 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  border-radius: 20px;
+  padding: 10px 25px;
+  border: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  background-color: var(--Strong-Cyan);
+  margin-bottom: 80px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#purple {
+  background-color: var(--Light-Blue);
+}
+
+p {
+  color: var(--Grayish-Blue);
+  opacity: 70%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--Dark-Grayish-Blue);
+  opacity: 90%;
+}
+
+footer {
+  max-width: 100%;
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+
+.footer-logo img {
+  height: 30px;
+}
+.socials img {
+  height: 20px;
+  padding-right: 10px;
+}
+
+.footer-text {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 200px;
+}
+
+a {
+  color: var(--Dark-Grayish-Blue);
+}
+
+a:hover {
+  color: var(--Strong-Cyan);
+}
+
+.header {
+  width: 50%;
+  padding-bottom: 50px;
+}
+
+.second {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.second img {
+  height: auto;
+  width: 450px;
+  padding-right: 50px;
+}
+.second-desc {
+  width: 50%;
+}
+
+.second-text {
+  padding-bottom: 7px;
+}
+
+.third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.third-desc-one,
+.third-desc-two {
+  width: 50%;
+}
+
+.fourth {
+  display: flex;
+  width: 80%;
+  padding: 70px;
+  justify-content: center;
+}
+
+.feature {
+  width: 300px;
+  padding-right: 30px;
+}
+
+.feature img {
+  height: 35px;
+}
+
+.brand {
+  padding: 0 40px 60px 0;
+  height: 40px;
+}
+
+.sixth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sixth-desc {
+  width: 50%;
+  padding-bottom: 60px;
+}

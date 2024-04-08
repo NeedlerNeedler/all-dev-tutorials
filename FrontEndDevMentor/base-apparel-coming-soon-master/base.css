@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
+  display: flex;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 0px 90px;
+  height: 100vh;
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-size: cover;
+}
+
+#logo {
+  padding-bottom: 150px;
+}
+
+#hero-image {
+}
