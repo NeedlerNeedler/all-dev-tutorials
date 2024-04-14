@@ -31,13 +31,14 @@ body {
 }
 
 img {
-  width: 600px;
+  width: 100%;
   border-radius: 10px;
 }
 
 .prep {
   background-color: hsl(330, 100%, 98%);
   padding: 10px;
+  border-radius: 20px;
 }
 
 .prep,
@@ -65,19 +66,35 @@ strong {
 }
 
 table {
-  width: 100%; /* Sets table width to fit the container */
-  border-collapse: collapse; /* Optional: for a cleaner look */
+  width: 100%; 
+  border-collapse: collapse;
 }
 
 td {
-  border: 1px solid #ddd; /* Optional: adds a border to each cell */
-  padding: 8px; /* Adjusts the padding inside each cell */
+  border: 1px solid #ddd; 
+  padding: 8px; 
 }
 
 td:nth-child(2) {
-  /* Targets the second column */
-  background-color: #f0f0f0; /* Sets a background color */
-  font-weight: bold; /* Makes the font bold */
-  text-align: right; /* Aligns text to the right */
+
+  background-color: #f0f0f0; 
+  font-weight: bold; 
+  text-align: right; 
   color: hsl(14, 45%, 36%);
+}
+
+@media only screen and (max-width: 520px) {
+  body{
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    padding: 0x;
+    border-radius: 0px;
+    margin: 0;
+  }
+
+  
+
 }
