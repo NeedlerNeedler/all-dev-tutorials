@@ -18,7 +18,7 @@ body {
   display: flex;
   text-align: center;
   flex-direction: column;
-  max-width: 300px;
+  max-width: 500px;
   color: grey;
   padding: 10px;
 }
@@ -31,12 +31,17 @@ body {
 }
 
 h1 {
-  font-size: 20px;
-  font-weight: 100;
+  color: #4D4F62;
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 0.25px;
 }
 
 h2 {
-  color: black;
+  color: #4D4F62;
+font-size: 36px;
+font-weight: 600;
+letter-spacing: 0.25px;
 }
 
 .blocks {
@@ -81,4 +86,23 @@ h2 {
 
 .blocks p {
   color: grey;
+}
+
+@media only screen and (max-width: 675px) {
+  .container{
+    max-width: 100%;
+  }
+
+  .blocks {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
 }
